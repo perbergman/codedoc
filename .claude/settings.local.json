@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(mkdir:*)",
+      "Bash(kill:*)",
+      "Bash(ls:*)",
+      "Bash(python:*)",
+      "Bash(git -C ../eth_explorer rm --cached eth_explorer.log)",
+      "Bash(git -C ../eth_explorer add .gitignore)",
+      "Bash(git -C ../eth_explorer commit -m \"Remove large log file and add to gitignore\")",
+      "Bash(git -C ../eth_explorer push -u origin main)",
+      "Bash(gh repo delete:*)",
+      "Bash(git -C ../music remote -v)",
+      "Bash(gh repo create:*)",
+      "Bash(git -C ../music config --get remote.origin.url)",
+      "Bash(git -C ../music remote set-url origin git@github.com:perbergman/music.git)",
+      "Bash(git -C ../music push -u origin main)",
+      "Bash(git -C ../music remote get-url origin)",
+      "Bash(git -C ../zkp-test-book remote get-url origin)",
+      "Bash(git -C ../zkp-test-book remote set-url origin git@github.com:perbergman/zkp-test-book.git)",
+      "Bash(git -C ../zkp-test-book push -u origin main)",
+      "Bash(chmod:*)"
+    ],
+    "deny": []
+  }
+}
